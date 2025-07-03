@@ -1,0 +1,13 @@
+<h2>DFA Simulation Result</h2>
+
+<div *ngIf="result">
+  <p>Status: <strong [style.color]="result.accepted ? 'green' : 'red'">
+    {{ result.accepted ? 'Accepted ✅' : 'Rejected ❌' }}
+  </strong></p>
+
+  <a [href]="pdfUrl" target="_blank" download>
+    Download DFA PDF
+  </a><br /><br />
+
+  <button (click)="router.navigate(['/'])">Simulate Again</button>
+</div>

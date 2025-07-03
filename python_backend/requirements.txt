@@ -1,0 +1,4 @@
+fastapi
+uvicorn
+dfa==4.7.1
+graphviz

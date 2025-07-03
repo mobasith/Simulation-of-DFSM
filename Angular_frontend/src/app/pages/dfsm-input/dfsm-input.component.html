@@ -1,0 +1,26 @@
+<h2>DFA Input Form</h2>
+<form [formGroup]="dfaForm" (ngSubmit)="onSubmit()">
+  <label>States (comma-separated):</label>
+  <input formControlName="states" placeholder="e.g. q0,q1,q2" /><br /><br />
+
+  <label>Alphabet (comma-separated):</label>
+  <input formControlName="alphabet" placeholder="e.g. 0,1" /><br /><br />
+
+  <label>Start State:</label>
+  <input formControlName="start" placeholder="e.g. q0" /><br /><br />
+
+  <label>Accept States (comma-separated):</label>
+  <input formControlName="accept" placeholder="e.g. q2" /><br /><br />
+
+  <label>Input String:</label>
+  <input formControlName="inputString" placeholder="e.g. 010" /><br /><br />
+
+  <label>Transitions (one per line):</label><br />
+  <textarea
+    formControlName="transitions"
+    rows="6"
+    placeholder="Format: from_state,input_symbol,to_state"
+  ></textarea><br /><br />
+
+  <button type="submit">Simulate DFA</button>
+</form>
