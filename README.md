@@ -50,7 +50,7 @@ Visit: http://localhost:4200
 - Backend (requirements.txt):
  1. fastapi==0.111.0
  2. uvicorn==0.30.1
- 3. automata-lib==1.0.0
+ 3. automata-lib
  4. graphviz==0.20.3
  5. pydantic==2.7.1
 
