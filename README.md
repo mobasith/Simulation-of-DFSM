@@ -26,9 +26,9 @@ A full-stack web application that allows users to define a **Deterministic Finit
     - pip install -r requirements.txt
 
 4. Install Graphviz (Required for PDF output):
-     - Linux/macOS:
+    - Linux/macOS:
       - sudo apt install graphviz
-    -  Windows:
+    - Windows:
        - Download from https://graphviz.org/download/
 
 5. Run the FastAPI server:
