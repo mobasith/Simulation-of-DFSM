@@ -48,16 +48,16 @@ Visit: http://localhost:4200
 
 ## 🧱 Dependencies:
 Backend (requirements.txt):
-fastapi==0.111.0
-uvicorn==0.30.1
-automata-lib==1.0.0
-graphviz==0.20.3
-pydantic==2.7.1
+1.fastapi==0.111.0
+2.uvicorn==0.30.1
+3.automata-lib==1.0.0
+4.graphviz==0.20.3
+5.pydantic==2.7.1
 
 Frontend (Angular v17+):
-Angular CLI v17
-RxJS v7+
-TypeScript v5+
+1.Angular CLI v17
+2.RxJS v7+
+3.TypeScript v5+
 
 ## 🙌 Author
 Mohammed Basith
