@@ -13,15 +13,6 @@ Backend: FastAPI (Python 3.10+)
 DFA logic: automata-lib v1.0.0
 Visualization: graphviz
 
-## 📂 Project Structure
-project-root/
-│
-├── Angular_frontend/ # Angular UI app (DFSM form, results)
-├── backend/ # FastAPI app (DFA logic + PDF generation)
-│ └── utils/
-│ └── visualize.py # Graphviz DFA rendering logic
-└── pdf/ # Output folder for DFA PDFs
-
 ## 🧑‍💻 Installation
 ## Backend:
 1. Navigate to backend:
