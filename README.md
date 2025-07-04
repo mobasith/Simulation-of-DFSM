@@ -8,10 +8,10 @@ A full-stack web application that allows users to define a **Deterministic Finit
 - Practical tool for automata theory
 
 ## 🛠️ Tech Stack
-Frontend: Angular 17+
-Backend: FastAPI (Python 3.10+)
-DFA logic: automata-lib v1.0.0
-Visualization: graphviz
+1. Frontend: Angular 17+
+2. Backend: FastAPI (Python 3.10+)
+3. DFA logic: automata-lib v1.0.0
+4. Visualization: graphviz
 
 ## 🧑‍💻 Installation
 ## Backend:
