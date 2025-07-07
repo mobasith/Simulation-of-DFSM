@@ -59,6 +59,31 @@ Visit: http://localhost:4200
  2. RxJS v7+
  3. TypeScript v5+
 
+## 🧪 Example Input
+States: q0,q1,q2
+
+Alphabet: 0,1
+
+Start State: q0
+
+Accept States: q2
+
+Input String: 010
+
+Transitions:
+q0,0,q1
+q0,1,q0
+q1,0,q1
+q1,1,q2
+q2,0,q2
+q2,1,q2
+
+## 📥 Output
+String verdict: Accepted ✅ or Rejected ❌
+
+DFA PDF: Downloadable file from /pdf/dfa_output.pdf
+
+
 ## 🙌 Author
 Mohammed Basith
 📫 LinkedIn: www.linkedin.com/in/mohammed-basith-97326321b

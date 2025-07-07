@@ -44,5 +44,8 @@ def simulate_dfa(data: DFARequest):
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
     
+# ✅ Ensure the pdf directory exists
 os.makedirs("pdf", exist_ok=True)
+
+# ✅ Serve PDFs at http://localhost:8000/pdf/dfa_output.pdf
 app.mount("/pdf", StaticFiles(directory="pdf"), name="pdf")
