@@ -1,4 +1,5 @@
-<h2>DFA Input Form</h2>
+<div class="form-container">
+<h2 style="text-align: center;">DFA Input Form </h2>
 <form [formGroup]="dfaForm" (ngSubmit)="onSubmit()">
   <label>States (comma-separated):</label>
   <input formControlName="states" placeholder="e.g. q0,q1,q2" /><br /><br />
@@ -22,5 +23,6 @@
     placeholder="Format: from_state,input_symbol,to_state"
   ></textarea><br /><br />
 
-  <button type="submit">Simulate DFA</button>
+  <button type="submit" class="submit-btn">Simulate DFA</button>
 </form>
+</div>

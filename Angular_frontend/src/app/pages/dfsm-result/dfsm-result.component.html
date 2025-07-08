@@ -1,17 +1,20 @@
+<div class="result-container">
 <h2>DFA Simulation Result</h2>
 
-<div *ngIf="result">
+<div *ngIf="result" class="verdict">
   <p>Status: <strong [style.color]="result.accepted ? 'green' : 'red'">
     {{ result.accepted ? 'Accepted ✅' : 'Rejected ❌' }}
   </strong></p>
 
-  <a [href]="pdfUrl" [attr.download]="getPdfFileName()" target="_blank">
+  <a [href]="pdfUrl" [attr.download]="getPdfFileName()" target="_blank" class="download-btn">
     📄 Download DFA PDF
   </a>  
+  <br>
 
   <!-- <a [href]="pdfUrl" target="_blank" rel="noopener">
     📄 View DFA PDF
   </a> -->
 
-  <button (click)="router.navigate(['/'])">Simulate Again</button>
+  <button (click)="router.navigate(['/'])" class="button">Simulate Again</button>
+</div>
 </div>
