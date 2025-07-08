@@ -71,12 +71,13 @@ Accept States: q2
 Input String: 010
 
 Transitions:
-q0,0,q1
-q0,1,q0
-q1,0,q1
-q1,1,q2
-q2,0,q2
-q2,1,q2
+1. q0,0,q1
+2. q0,1,q0
+3. q1,0,q1
+4. q1,1,q2
+5. q2,0,q2
+6. q2,1,q2
+(remove the number bullets and paste )
 
 ## 📥 Output
 String verdict: Accepted ✅ or Rejected ❌
