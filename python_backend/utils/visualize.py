@@ -1,7 +1,8 @@
 import os
+from datetime import datetime
 from graphviz import Digraph
 
-def generate_pdf(dfa, filename="dfa_output.pdf"):
+def generate_pdf(dfa):
     dot = Digraph(format='pdf')
     dot.attr(rankdir='LR')
 
@@ -16,14 +17,20 @@ def generate_pdf(dfa, filename="dfa_output.pdf"):
         for symbol, to_state in transitions.items():
             dot.edge(from_state, to_state, label=symbol)
 
-    # ✅ Save into backend/pdf/
+    # ✅ Generate unique filename
+    timestamp = datetime.now().strftime("%Y%m%d%H%M%S")
+    filename = f"dfa_{timestamp}"
+
+    # ✅ Ensure output directory exists
     output_dir = os.path.join(os.path.dirname(__file__), '..', 'pdf')
     os.makedirs(output_dir, exist_ok=True)
 
     pdf_path = os.path.join(output_dir, filename)
 
-    # ✅ Save PDF and return path
-    final_path = dot.render(pdf_path, cleanup=True)
-    print("✅ PDF saved at:", final_path)
+    dot.render(pdf_path, cleanup=True)
 
-    return f"/pdf/{filename}"  # This is the public path for Angular
+    final_pdf_name = f"{filename}.pdf"
+    print("✅ PDF saved as:", final_pdf_name)
+
+    # Return the correct public-facing path
+    return f"/pdf/{final_pdf_name}"

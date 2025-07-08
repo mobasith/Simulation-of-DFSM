@@ -10,6 +10,10 @@ import { Router } from '@angular/router';
   styleUrl: './dfsm-result.component.css'
 })
 export class DfsmResultComponent implements OnInit{
+  getPdfFileName(): string {
+    if (!this.pdfUrl) return 'dfa_output.pdf';
+    return this.pdfUrl.split('/').pop() || 'dfa_output.pdf';
+  }
   result:any;
   pdfUrl: string = '';
 

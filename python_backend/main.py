@@ -38,7 +38,7 @@ def simulate_dfa(data: DFARequest):
             #allow_partial=True
         )
         result = dfa.accepts_input(data.input_string)
-        pdf_path = generate_pdf(dfa, "dfa_output.pdf")
+        pdf_path = generate_pdf(dfa)
 
         return {"accepted": result, "pdf_path": pdf_path}
     except Exception as e:

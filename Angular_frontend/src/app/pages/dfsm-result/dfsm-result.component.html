@@ -5,9 +5,13 @@
     {{ result.accepted ? 'Accepted ✅' : 'Rejected ❌' }}
   </strong></p>
 
-  <a [href]="pdfUrl" download="dfa_output.pdf" target="_blank">
+  <a [href]="pdfUrl" [attr.download]="getPdfFileName()" target="_blank">
     📄 Download DFA PDF
-  </a>
+  </a>  
+
+  <!-- <a [href]="pdfUrl" target="_blank" rel="noopener">
+    📄 View DFA PDF
+  </a> -->
 
   <button (click)="router.navigate(['/'])">Simulate Again</button>
 </div>
