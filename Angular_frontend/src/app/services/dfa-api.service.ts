@@ -7,7 +7,7 @@ import { inject } from '@angular/core';
   providedIn: 'root'
 })
 export class DfaApiService {
-  private apiUrl = 'https://simulation-of-dfsm-production.up.railway.app/';
+  private apiUrl = 'https://simulation-of-dfsm-production.up.railway.app';
 
   constructor(public http: HttpClient = inject(HttpClient)) {}
 
