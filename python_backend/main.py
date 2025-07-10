@@ -27,7 +27,6 @@ class DFARequest(BaseModel):
 
 @app.post("/simulate")
 def simulate_dfa(data: DFARequest):
-    print("Received Data:", data)
     try:
         dfa = DFA(
             states=set(data.states),
@@ -35,14 +34,16 @@ def simulate_dfa(data: DFARequest):
             transitions=data.transitions,
             initial_state=data.start,
             final_states=set(data.accept),
-            #allow_partial=True
         )
         result = dfa.accepts_input(data.input_string)
-        pdf_path = generate_pdf(dfa)
+
+        # 🔹 Pass extra info to PDF generator
+        pdf_path = generate_pdf(dfa, data.input_string, result)
 
         return {"accepted": result, "pdf_path": pdf_path}
     except Exception as e:
         raise HTTPException(status_code=400, detail=str(e))
+
     
 # ✅ Ensure the pdf directory exists
 os.makedirs("pdf", exist_ok=True)

@@ -8,6 +8,8 @@ import { inject } from '@angular/core';
 })
 export class DfaApiService {
   private apiUrl = 'https://simulation-of-dfsm-production.up.railway.app';
+  //private apiUrl =  'http://localhost:8000';
+
 
   constructor(public http: HttpClient = inject(HttpClient)) {}
 
