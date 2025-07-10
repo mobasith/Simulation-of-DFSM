@@ -1,5 +1,5 @@
 # DFSM Analyzer: Visual DFA Simulator & Verifier :
-A full-stack web application that allows users to define a **Deterministic Finite State Machine (DFA)**, simulate input strings against it, and generate a **visual PDF representation** of the DFA. Built using **Angular** and **FastAPI**, with DFA logic powered by `automata-lib` and Graphviz.
+A full-stack web application that allows users to define a **Deterministic Finite State Machine (DFA)**, simulate input strings against it, and generate a **visual PDF representation** of the DFA. Built using **Angular** and **FastAPI**, with DFA logic powered by `automata-lib`.
 
 ## 🚀 Features
 - Define DFA (states, alphabet, transitions, start/accept states)
@@ -11,7 +11,7 @@ A full-stack web application that allows users to define a **Deterministic Finit
 1. Frontend: Angular 17+
 2. Backend: FastAPI (Python 3.10+)
 3. DFA logic: automata-lib v1.0.0
-4. Visualization: graphviz
+4. Visualization: reportlab, matplotlib
 
 ## 🧑‍💻 Installation
 ## Backend:
@@ -98,13 +98,12 @@ Accept States: q2
 Input String: 010
 
 Transitions:
-1. q0,0,q1
-2. q0,1,q0
-3. q1,0,q1
-4. q1,1,q2
-5. q2,0,q2
-6. q2,1,q2
-(remove the number bullets and paste )
+- q0,0,q1
+- q0,1,q0
+- q1,0,q1
+- q1,1,q2
+- q2,0,q2
+- q2,1,q2
 
 ## 📥 Output
 String verdict: Accepted ✅ or Rejected ❌
