@@ -16,33 +16,44 @@ A full-stack web application that allows users to define a **Deterministic Finit
 ## 🧑‍💻 Installation
 ## Backend:
 1. Navigate to backend:
-   - cd backend
+      ```bash
+      cd backend
    
-2. Create and activate virtual environment:
-    - python -m venv venv
-    - source venv/bin/activate  # On Windows: venv\Scripts\activate
+3. Create and activate virtual environment:
+      ```bash
+      python -m venv venv
+      ```
+   ```bash
+   source venv/bin/activate
+On Windows: venv\Scripts\activate
    
-3. Install dependencies:
-    - pip install -r requirements.txt
+4. Install dependencies:
+      ```bash
+    pip install -r requirements.txt
 
-4. Install Graphviz (Required for PDF output):
+6. Install Graphviz (Required for PDF output):
     - Linux/macOS:
-      - sudo apt install graphviz
+         ```bash
+       sudo apt install graphviz
     - Windows:
-       - Download from https://graphviz.org/download/
+    Download from https://graphviz.org/download/
 
-5. Run the FastAPI server:
-    - uvicorn main:app --reload
+7. Run the FastAPI server:
+      ```bash
+   uvicorn main:app --reload
 
 ## Frontend: 
 1. Navigate to frontend folder:
-   - cd Angular_frontend
+   ```bash
+   cd Angular_frontend
 
 2. Install dependencies:
-   - npm install
+   ```bash
+   npm install
 
 3. Run the frontend app:
-   - ng serve
+   ```bash
+   ng serve
    
 Visit: http://localhost:4200
 
