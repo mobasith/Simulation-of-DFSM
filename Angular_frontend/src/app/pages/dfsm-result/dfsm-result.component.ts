@@ -28,7 +28,7 @@ export class DfsmResultComponent implements OnInit{
       }
   
       this.result = JSON.parse(stored);
-      this.pdfUrl = `http://localhost:8000${this.result.pdf_path}`;
+      this.pdfUrl = `https://simulation-of-dfsm-production.up.railway.app${this.result.pdf_path}`;
 
     } else {
       console.error('localStorage is not available.');
