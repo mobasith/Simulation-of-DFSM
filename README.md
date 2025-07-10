@@ -48,11 +48,38 @@ Visit: http://localhost:4200
 
 ## 🧱 Dependencies:
 - Backend (requirements.txt):
- 1. fastapi==0.111.0
- 2. uvicorn==0.30.1
- 3. automata-lib
- 4. graphviz==0.20.3
- 5. pydantic==2.7.1
+1. annotated-types==0.7.0
+2. anyio==4.9.0
+3. automata-lib==9.0.0
+4. cached_method==0.1.0
+5. charset-normalizer==3.4.2
+6. click==8.2.1
+7. colorama==0.4.6
+8. contourpy==1.3.2
+9. cycler==0.12.1
+10. fastapi==0.115.14
+11. fonttools==4.58.5
+12. frozendict==2.4.6
+13. graphviz==0.21
+14. h11==0.16.0
+16. idna==3.10
+17. kiwisolver==1.4.8
+18. matplotlib==3.10.3
+19. networkx==3.5
+20. numpy==2.3.1
+21. packaging==25.0
+22. pillow==11.3.0
+23. pydantic==2.11.7
+24. pydantic_core==2.33.2
+25. pyparsing==3.2.3
+26. python-dateutil==2.9.0.post0
+27. reportlab==4.4.2
+28. six==1.17.0
+29. sniffio==1.3.1
+30. starlette==0.46.2
+31. typing-inspection==0.4.1
+32. typing_extensions==4.14.1
+33. uvicorn==0.35.0
 
 - Frontend (Angular v17+):
  1. Angular CLI v17
